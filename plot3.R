@@ -1,4 +1,4 @@
-plot3 <- function(path = pathMac) {
+plot3 <- function(path = 'household_power_consumption.txt') {
   # Reading the file
   test <- read.csv(path, sep = ';')
   test$Date <- as.Date(test$Date, format = '%d/%m/%Y')
